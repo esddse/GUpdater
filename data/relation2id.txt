@@ -1,0 +1,5 @@
+4
+<general_mananger>	0
+<player>	1
+<teammate>	2
+<head_coach>	3
