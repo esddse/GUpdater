@@ -13,7 +13,6 @@ import copy
 
 from collections import Counter
 
-from tqdm import tqdm
 import numpy as np
 import torch
 
@@ -48,7 +47,7 @@ def load_str_lst(path):
     ''' load string list '''
     strs = []
     with open(path, "r", encoding="utf8") as f:
-        for line in tqdm(f):
+        for line in f:
             strs.append(line.strip())
     return strs
 
@@ -56,7 +55,7 @@ def load_str_dict(path, seperator="\t", reverse=False):
     ''' load string dict '''
     dictionary, reverse_dictionay = {}, {}
     with open(path, "r", encoding="utf8") as f:
-        for line in tqdm(f):
+        for line in f:
             try:
                 key, value = line.strip().split(seperator)
                 dictionary[key] = int(value)
@@ -70,7 +69,7 @@ def load_str_dict(path, seperator="\t", reverse=False):
 def dump_str_lst(lst, path):
     ''' save string list '''
     with open(path, "w", encoding="utf8") as f:
-        for string in tqdm(lst):
+        for string in lst:
             f.write(string+'\n')
 
 def load_NBAtransactions(file_path):
