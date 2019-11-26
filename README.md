@@ -45,4 +45,18 @@ We provide the newly constructed dataset **NBAtransactions** in JSON format unde
    python3 exp/test.py
    ```
 
-   
+
+### Reference
+
+ If you use the code, please cite our paper: 
+
+```
+@inproceedings{tang2019learning,
+  title={Learning to Update Knowledge Graphs by Reading News},
+  author={Tang, Jizhi and Feng, Yansong and Zhao, Dongyan},
+  booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  pages={2632--2641},
+  year={2019}
+}
+```
+
